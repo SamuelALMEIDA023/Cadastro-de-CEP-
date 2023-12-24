@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    box-shadow: none;
+}
+
+html {
+    background: url('../img/bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-position-y: 2px;
+    background-color: rgb(9, 6, 27);
+}
+
+.container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.campo-busca {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    justify-content: center;
+}
+
+.campo-busca input {
+    max-width: 270px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+.campo-busca button {
+    height: 35px;
+    padding: 0 20px;
+    background-color: rgb(195, 59, 186);
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.msg-erro {
+    color: rgb(225, 164, 21);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: none;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ffff;
+}
+
+.todos-dados-cep {
+    border: 3px solid rgb(117, 113, 113);
+    border-radius: 6px;
+    width: 100%;
+    max-width: 380px;
+    padding: 20px;
+    animation: fadeIn .5s forwards;
+    display: none;
+}
+
+h2 {
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    height: 38px;
+    border: 2px solid rgb(117, 113, 113);
+    margin-bottom: 15px;
+}
+
+input:read-only {
+    background-color: rgb(241, 241, 209);
+    cursor:no-drop;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

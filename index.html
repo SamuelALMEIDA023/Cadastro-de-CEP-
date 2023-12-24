@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumindo API</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="consumindo-api">
+        <div class="container">
+            <div class="campo-busca">
+                <input type="text" id="js-cep">
+                <button id="js-button">Buscar</button>
+            </div>
+            <P class="msg-erro" id="js-erro">Preencha o campo, por favor!!!</P>
+            <div class="todos-dados-cep">
+                <h2>Dados do CEP</h2>
+                <div>
+                    <label for="">Bairro</label>
+                    <input type="text" id="js-dados-bairro" readonly>
+                    <label for="">CEP</label>
+                    <input type="text" id="js-dados-cep" readonly>
+                    <label for="">Logradouro</label>
+                    <input type="text" id="js-dados-logradouro" readonly>
+                    <label for="">Estado</label>
+                    <input type="text" id="js-dados-estado" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
